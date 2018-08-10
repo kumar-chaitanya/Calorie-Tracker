@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>TraCalorie</title>
+</head>
+<body>
+  <header>
+    <div class="container head">
+      <h1>TraCalorie</h1>
+      <button id="clear-all">
+        Clear All
+      </button>
+    </div>
+  </header>
+  
+  <section class="create-item container">
+    <h3>Add Meal / Food Item</h3>
+    <div class="form">
+      <div class="meal">
+        <label for="meal">Meal</label>
+        <input type="text" placeholder="Add Item" id="meal">
+      </div>
+      <div class="calorie">
+        <label for="calories">Calories</label>
+        <input type="text" placeholder="Add Calories" id="calories">
+      </div>
+    </div>
+    <button id="add-item">
+      Add Meal
+    </button>
+    <button id="update-item">
+      Update Meal
+    </button>
+    <button id="delete-item">
+      Delete Meal
+    </button>
+    <button id="back">
+      Back
+    </button>
+  </section>
+  
+  <h1 id="total-cals" class="container">Total Calories: <span>0</span></h1>
+  
+  <section class="contain-item container">
+    <ul class="item-container">
+    </ul>
+  </section>
+  
+  <script src="app.js"></script>
+</body>
+</html>
